@@ -2,5 +2,5 @@
 
 Nicolas Gonçalves - 10418047 
 
-# SEGUINTE, SR JOAVA III. O FIM É TRISTE
+# SEGUINTE, SR JOACA III. O FIM É TRISTE
 Ass. O cara com o fim triste
