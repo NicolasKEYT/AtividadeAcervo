@@ -1,11 +1,9 @@
 package nicolas_acervo.aplicacao;
 
 
-import nicolas_acervo.entidade.Livro; // Ensure this import exists and points to the correct package
+import nicolas_acervo.entidade.Livro; 
 
-// Verify that the Livro class exists in the specified package
 
-// Verify that the Livro class exists in the specified package
 import nicolas_acervo.repositorio.LivroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -33,7 +31,7 @@ public class ConsoleApp {
             System.out.print("Escolha uma opção: ");
 
             int opcao = scanner.nextInt();
-            scanner.nextLine(); // Consumir nova linha
+            scanner.nextLine(); 
 
             switch (opcao) {
                 case 1 -> cadastrarLivro();
