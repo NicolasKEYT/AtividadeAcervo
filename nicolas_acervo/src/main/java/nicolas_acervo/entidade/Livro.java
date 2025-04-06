@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.JoinColumn;
 
 @Entity
 public class Livro {
@@ -15,6 +17,10 @@ public class Livro {
     private String autor;
     private int anoPublicacao;
     private String editora;
+
+    @ManyToOne
+    @JoinColumn(name = "biblioteca_id")
+    private Biblioteca biblioteca;
 
     public Livro() {
     }
@@ -66,6 +72,14 @@ public class Livro {
 
     public void setEditora(String editora) {
         this.editora = editora;
+    }
+
+    public Biblioteca getBiblioteca() {
+        return biblioteca;
+    }
+
+    public void setBiblioteca(Biblioteca biblioteca) {
+        this.biblioteca = biblioteca;
     }
 
     @Override
